@@ -30,3 +30,36 @@ miSerial.on('data', function(data){
     bot.sendMessage(idChar, "El valor es 3");
     x = 3;
   }
+  else if (data[0] == '4'){
+    console.log("El valor es 4");
+    bot.sendMessage(idChar, "El valor es 4");
+    x = 4;
+  }else if (data[0] == '5'){
+    console.log("El valor es 5");
+    bot.sendMessage(idChar, "El valor es 5");
+    x = 5;
+  }else if (data[0] == '6'){
+    console.log("El valor es 6");
+    bot.sendMessage(idChar, "El valor es 6");
+    x = 6;
+  }else if (data[0] == '7'){
+    console.log("El valor es 7");
+    bot.sendMessage(idChar, "El valor es 7");
+    x = 7;
+  }else if (data[0] == '8'){
+    console.log("El valor es 8");
+    bot.sendMessage(idChar, "El valor es 8");
+    x = 8;
+  }else if (data[0] == '9'){
+    console.log("El valor es 9");
+    bot.sendMessage(idChar, "El valor es 9");
+    x = 9;
+  }
+  if(x > max){
+    max = x;
+  }else if (x < min) {
+    min = x;
+  }
+  bot.sendMessage(idChar, "El mayor valor recibido es "+ max);
+  bot.sendMessage(idChar, "El menor valor recibido es "+ min);
+});
